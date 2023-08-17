@@ -1,0 +1,236 @@
+* {
+    color: #4B6768;
+    font-family: monospace;
+}
+
+button:hover,
+input:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+
+/* INPUTS */
+
+input {
+    background-color: #F3F9F9;
+    border-radius: 5px;
+    border: none;
+    height: 1.5em;
+    text-align: right;
+    font-weight: 600;
+    padding-inline: 0 2em;
+    font-size: 24px;
+    width: 100%;
+}
+
+#inputBillContainer,
+#inputPeopleContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -.7em;
+}
+
+.billInputs {
+    position: relative;
+    left: 2em;
+    height: 16px;
+}
+
+
+/* =-=-=-=-==-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+/* BUTTONS */
+
+#selectContainer2 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+
+#selectContainer2>button {
+    border: none;
+    border-radius: 5px;
+    background-color: #00474B;
+    font-size: 24px;
+    height: 2em;
+    color: white;
+}
+
+#custom {
+    font-size: 24px;
+    height: 2em;
+    font-weight: 600;
+    color: #00474B;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* -=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-===--==--=-=-=-= */
+
+#spli,
+#tter {
+    color: #00474B;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    letter-spacing: .3em;
+}
+
+#splitter {
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5E4E7;
+}
+
+#card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+    display: flex;
+    height: 24em
+}
+
+#billCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+}
+
+#billContainer {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+
+/* resultssssssss */
+
+#resultCard {
+    padding: 2em;
+    margin-left: 2em;
+    background-color: #00474B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#resultTip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1em 1em;
+    gap: .5em;
+    grid-auto-flow: column;
+    grid-template-areas: "t n" "p n";
+    height: min-content;
+}
+
+#resultAmount {
+    grid-area: "t";
+    color: white;
+}
+
+#tipPerson {
+    grid-area: "p";
+    color: #64969D
+}
+
+#resultTipAmount {
+    grid-area: "n";
+    color: #26C2AD;
+    text-align: right;
+    font-size: 3em;
+    position: relative;
+    top: -.5em
+}
+
+#resultTotal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1em 1em;
+    grid-auto-flow: column;
+    gap: .5em;
+    grid-template-areas: "t2 n2" "p2 n2";
+    height: min-content;
+}
+
+#resultTotalPerson {
+    grid-area: "t2";
+    color: white;
+}
+
+#totlaPerson {
+    grid-area: "p2";
+    color: #64969D
+}
+
+#resultTotalAmount {
+    grid-area: "n2";
+    color: #26C2AD;
+    text-align: right;
+    font-size: 3em;
+    position: relative;
+    top: -.5em
+}
+
+#reset {
+    background-color: #0D686D;
+    color: #0a5357;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+}
+
+
+/* ==-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/* HOVER */
+
+#reset:hover,
+#selectContainer2>button:hover {
+    color: #00474B;
+    background-color: #9FE8DF;
+}
+
+input:focus {
+    outline: none;
+}
+
+#custom:focus,
+#custom:hover,
+#amount:focus,
+#amount:hover,
+#peopleInput:focus,
+#peopleInput:hover {
+    outline: 2px solid #26C2AD;
+}
+
+
+/* ==-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

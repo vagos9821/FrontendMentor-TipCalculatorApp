@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="splitter">
+        <h1 id="spli">SPLI</h1>
+        <h1 id="tter">TTER</h1>
+    </div>
+
+    <div id="card">
+        <div id="billCard">
+            <div id="billContainer">
+                <h2 id="bill">Bill</h2>
+                <div id="inputBillContainer">
+                    <img class="billInputs" src="images/icon-dollar.svg" alt="">
+                    <input placeholder="0" type="text" name="" id="amount">
+                </div>
+
+            </div>
+            <div id="selectContainer">
+                <h2 id="selectTip">Select Tip %</h2>
+                <div id="selectContainer2">
+                    <button id="tip1">5% </button>
+                    <button id="tip2">10%</button>
+                    <button id="tip3">15%</button>
+                    <button id="tip4">25%</button>
+                    <button id="tip5">50%</button>
+                    <input type="text" placeholder="Custom" id="custom">
+                </div>
+
+            </div>
+            <div id="people">
+                <h2 id="numberPeople">Number of People</h2>
+                <div id="inputPeopleContainer">
+                    <img class="billInputs" src="images/icon-person.svg" alt="">
+                    <input type="text" placeholder="0" name="" id="peopleInput">
+                </div>
+            </div>
+        </div>
+
+        <div id="resultCard">
+            <div id="results">
+                <div id="resultTip">
+                    <h2 id="resultAmount">Tip Amount</h2>
+                    <p id="tipPerson">/ person</p>
+                    <h1 id="resultTipAmount">$0.00</h1>
+                </div>
+                <div id="resultTotal">
+                    <h2 id="resultTotalPerson">Total</h2>
+                    <p id="totlaPerson">/ person</p>
+                    <h1 id="resultTotalAmount">$0.00</h1>
+                </div>
+            </div>
+
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
+</body>
+
+</html>

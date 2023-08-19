@@ -43,12 +43,12 @@
             <div id="selectContainer">
                 <h2 id="selectTip">Select Tip %</h2>
                 <div id="selectContainer2">
-                    <button id="tip1">5% </button>
-                    <button id="tip2">10%</button>
-                    <button id="tip3">15%</button>
-                    <button id="tip4">25%</button>
-                    <button id="tip5">50%</button>
-                    <input type="text" placeholder="Custom" id="custom">
+                    <button onclick="tip_button(5)" id="tip1">5%</button>
+                    <button onclick="tip_button(10)" id="tip2">10%</button>
+                    <button onclick="tip_button(15)" id="tip3">15%</button>
+                    <button onclick="tip_button(25)" id="tip4">25%</button>
+                    <button onclick="tip_button(50)" id="tip5">50%</button>
+                    <input type="text" onblur="custom_tip(this)" onkeydown="custom_tip(this)" placeholder="Custom" id="custom">
                 </div>
 
             </div>
@@ -58,6 +58,7 @@
                     <img class="billInputs" src="images/icon-person.svg" alt="">
                     <input type="text" placeholder="0" name="" id="peopleInput">
                 </div>
+                <p id="error">Can't be zero</p>
             </div>
         </div>
 

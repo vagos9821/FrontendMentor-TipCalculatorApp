@@ -10,7 +10,6 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <style>
         .attribution {
             font-size: 11px;
@@ -23,7 +22,7 @@
     </style>
 </head>
 
-<body>
+<body id="body">
 
     <div id="splitter">
         <h1 id="spli">SPLI</h1>
@@ -76,13 +75,15 @@
                 </div>
             </div>
 
-            <button id="reset">RESET</button>
+            <button id="reset" onclick="reset()">RESET</button>
         </div>
     </div>
 
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

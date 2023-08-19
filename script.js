@@ -47,4 +47,34 @@ function custom_tip(ele) {
     }
 }
 
-// People Error =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+// Reset Button --=--=--=-=-=-==-=-=-
+function reset() {
+    var tip_person = document.getElementById("resultTipAmount")
+    var total_person = document.getElementById("resultTotalAmount")
+    tip_person.innerHTML = "$" + "0.00"
+    total_person.innerHTML = "$" + "0.00"
+}
+
+
+// =-=-=-=-=-=-=-=-=-Mobile version =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+if (window.innerWidth < 701) {
+    var card = document.getElementById("card")
+    var splitter = document.getElementById("splitter")
+    var billCard = document.getElementById("billCard")
+    var resultCard = document.getElementById("resultCard")
+    var body = document.getElementById("body")
+
+    card.style = "flex-direction: column; width:375px; height:fit-content; align-items:center;gap:2em; padding-right:0; padding-left:0; right:0"
+
+    splitter.style = "margin:2em"
+
+    body.style = "margin:0"
+
+    billCard.style = "flex-direction: column; width:300px; height:fit-content; align-items:center"
+
+    resultCard.style = "display:flex; gap:5em; width:300px; position:relative; margin-left:0"
+
+    console.log("mobile")
+}
